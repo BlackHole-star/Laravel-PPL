@@ -435,7 +435,7 @@
   [type="button"],
   [type="reset"],
   [type="submit"] {
-    -webkit-appearance: button;
+    appearance: button;
   }
   
   button:not(:disabled),
@@ -496,7 +496,7 @@
   
   [type="search"] {
     outline-offset: -2px;
-    -webkit-appearance: textfield;
+    appearance: textfield;
   }
   
   /* rtl:raw:
@@ -517,7 +517,7 @@
   
   ::file-selector-button {
     font: inherit;
-    -webkit-appearance: button;
+    appearance: button;
   }
   
   output {
@@ -20399,7 +20399,7 @@
     background-position-x: 25%;
     position: relative;
     overflow: hidden;
-    -webkit-appearance: none;
+    appearance: none;
   }
   
   .btn:not([class*="btn-outline-"]) {
@@ -26146,7 +26146,7 @@
     -ms-touch-action: manipulation;
     touch-action: manipulation;
     background: #fff;
-    -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     transform: scale(0.95) !important;
   }
   
@@ -27267,10 +27267,10 @@
     background: #fff;
     cursor: default;
     box-shadow: inset 0 0 1px #fff, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
-    webkit-transition: .3s ease 0s;
+    transition: .3s ease 0s;
     -moz-transition: .3s ease 0s;
     -ms-transition: .3s ease 0s;
-    -o-transform: .3s ease 0s;
+    transform: .3s ease 0s;
     transition: .3s ease 0s;
   }
   
