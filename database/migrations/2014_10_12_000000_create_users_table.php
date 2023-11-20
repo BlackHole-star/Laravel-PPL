@@ -8,26 +8,26 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
+     *
+     * @return void
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('username');
-            $table->string('email')->unique();
+            $table->id('nip_nim');
+            $table->string('username')->unique();
+            $table->string('role');
             $table->string('password');
-            $table->enum('role', ['mahasiswa', 'doswal', 'operator', 'departemen'])
-            ->default('mahasiswa');
-            $table->rememberToken();
             $table->timestamps();
         });
     }
 
     /**
      * Reverse the migrations.
+     *
+     * @return void
      */
-    public function down(): void
+    public function down()
     {
         Schema::dropIfExists('users');
     }
